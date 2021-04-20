@@ -237,7 +237,7 @@ spec:
     #       name: manifests
     #       path: seldon/seldon-core-operator
     #   name: seldon-core-operator
-  enableApplications: false
+  enableApplications: true
   packageManager: kustomize
   skipInitProject: true
   useBasicAuth: false
