@@ -39,18 +39,18 @@ spec:
     #       name: manifests
     #       path: istio/istio
     #   name: istio
-    # - kustomizeConfig:
-    #     repoRef:
-    #       name: manifests
-    #       path: application/application-crds
-    #   name: application-crds
-    # - kustomizeConfig:
-    #     overlays:
-    #       - application
-    #     repoRef:
-    #       name: manifests
-    #       path: application/application
-    #   name: application
+    - kustomizeConfig:
+        repoRef:
+          name: manifests
+          path: application/application-crds
+      name: application-crds
+    - kustomizeConfig:
+        overlays:
+          - application
+        repoRef:
+          name: manifests
+          path: application/application
+      name: application
     # - kustomizeConfig:
     #     repoRef:
     #       name: manifests
