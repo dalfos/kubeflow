@@ -219,17 +219,17 @@ spec:
     #       name: manifests
     #       path: pipeline/scheduledworkflow
     #   name: scheduledworkflow
-    # - kustomizeConfig:
-    #     overlays:
-    #       - istio
-    #     parameters:
-    #       - initRequired: true
-    #         name: admin
-    #         value: johnDoe@acme.com
-    #     repoRef:
-    #       name: manifests
-    #       path: profiles
-    #   name: profiles
+    - kustomizeConfig:
+        overlays:
+          - istio
+        parameters:
+          - initRequired: true
+            name: admin
+            value: johnDoe@acme.com
+        repoRef:
+          name: manifests
+          path: profiles
+      name: profiles
     # - kustomizeConfig:
     #     overlays:
     #       - application
